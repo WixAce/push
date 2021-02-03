@@ -3,11 +3,13 @@ class MessageModel {
   Map<String, dynamic> extra;
   MessageBodyModel body;
   String msgId;
+  String timestamp;
 
   MessageModel.fromJson(Map<String, dynamic> json)
       : displayType = json["display_type"],
         extra = json["extra"],
         body = MessageBodyModel.fromJson(json["body"]),
+        timestamp=json["timestamp"],
         msgId = json["msg_id"];
 
   Map<String, dynamic> toJson() => {
@@ -15,6 +17,7 @@ class MessageModel {
         'extra': extra,
         'body': body.toJson(),
         'msg_id': msgId,
+        'timestamp':timestamp
       };
 }
 
