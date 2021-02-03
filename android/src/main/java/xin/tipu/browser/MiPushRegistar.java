@@ -1,4 +1,4 @@
-package android.src.main.java.xin.tipu.browser;
+package xin.tipu.browser;
 
 import android.content.Context;
 import android.content.Intent;

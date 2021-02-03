@@ -1,4 +1,4 @@
-package android.src.main.java.xin.tipu.browser;
+package xin.tipu.browser;
 
 import com.umeng.message.UmengNotifyClickActivity;
 import android.util.Log;
